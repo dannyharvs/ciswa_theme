@@ -4,7 +4,8 @@
 
     */
     ?>
-<?php get_header(); /* Tells WordPress to include header.php */ ?>
+   <?php include (TEMPLATEPATH . '/header.php');  /* Tells WordPress to include the smaller header header.php */ ?> 
+
 <div class="container-fluid maincontainer">
     <div class="container">
         <div class="row">
@@ -16,13 +17,14 @@
 <div class="post single-page">
 		<h3 class="posttitle" id="post-<?php the_ID(); ?>"><?php the_title(); ?></h3>
 
-		
-	</div><!--post class-->
 	
-        <!—add the hook to the new tester text field which can be added to any div anywhere-->
     
+    <!—add the hook to the new tester text field which can be added to any div anywhere-->
 	<p><?php the_field(‘tester’); ?></p>
 
+
+    </div><!--post class-->
+	
    
 <?php endwhile; ?>
 			
@@ -35,11 +37,13 @@
 
 
 </section> <!--main_articles-->
-    <?php get_sidebar(); ?>        
+ <?php get_sidebar(); ?> 
             
-     </div>
-    </div>
-  </div>
-
+         
+            
+            
+     </div><!--row-->
+    </div><!--container-->
+  </div><!--container_fluid-->
 
 <?php get_footer(); ?>
