@@ -8,7 +8,7 @@ wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap
  
 add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
 ?>
-
+<?php the_content(); ?>
 <?php
 function register_my_menu() {
   register_nav_menu('menu-header',__( 'Menu Header' ));
@@ -17,4 +17,20 @@ function register_my_menu() {
 
 <?php // Register custom navigation walker
    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+?>
+
+<?php
+if (function_exists('register_sidebar')) register_sidebar();
+//making a widgetised area
+ if (function_exists('register_sidebar')) {
+	register_sidebar(array(
+		'name' => 'Widgetized Sidebar Area',
+		'id'   => 'widgetized-area',
+		'description'   => 'This is a widgetized area.',
+		'before_widget' => '<aside class="aside_elements">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>'
+	));
+}
 ?>
