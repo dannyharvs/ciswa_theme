@@ -6,9 +6,7 @@
              
             <div class="col-sm-1">
                 
-                <h4><?php the_field('about_us'); ?>
-                    About Us
-                </h4>
+                <h4>About Us</h4>
                 <ul class="demo">
                     <li>
                         <a href="#"> What is CISWA</a>
