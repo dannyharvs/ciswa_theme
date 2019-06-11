@@ -148,6 +148,9 @@ h3 {
 
 }
 
+.col-sm-6 h1 {
+    font-family: 'Lato', sans-serif;
+}
 
 .col-sm-6 p {
     padding-top: 50px;
