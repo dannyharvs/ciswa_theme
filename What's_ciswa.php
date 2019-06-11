@@ -11,39 +11,30 @@
 <div class="container-fluid maincontainer">
     <div class="container">
         <div class="row">
-            <section class="col-sm-7 main_text">
-                <article class="excerpts">
-                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <div class="col-sm-6" text-center>
+                <h1><?php the_field('whatisciswaheading'); ?>
+                </h1>
+                <p><?php the_field('whatisciswa'); ?>
+                    
+<!--
+                    CISWA is an independent, voluntary, non-profit group promoting the wellbeing of international students studying in Western Australia.
+                    Originally funded by AusAid, CISWA was established in1963 in response to the demand for support services for the 1000 international students studying in Western Australia. Over fifty years on, CISWA remains the only organization of its kind in Australia, though the number of international students in WA has grown to over 50,000.
+
+                    CISWA supports the staff who work with international students, running an affordable Professional Development (PD) Program and an Annual Winter Conference currently in its 25th year.
+                    CISWA supports international students through providing free Hospitality programs integrating them with local Australian families through the “Country”, “Christmas” and “Share a Meal” programs. The two former programs have been in operation for over 20 years.
+-->
+                </p>
 
 
-
-                    <div class="post single-page">
-                        <h3 class="posttitle" id="post-<?php the_ID(); ?>"><?php the_title(); ?></h3>
-
-
-
-                        <!—add the hook to the new tester text field which can be added to any div anywhere-->
-                            <p><?php the_field(‘tester’); ?></p>
-
-
-                    </div>
-                    <!--post class-->
-
-
-                    <?php endwhile; ?>
-
-                    <?php else: ?>
-                    <div class="post">
-                        <p>Sorry, no posts found.</p>
-                    </div>
-                    <!--post-->
-                    <?php endif; ?>
-                </article>
-                <!---->
-
-
-            </section>
+            </div>
+            
+            <div class="col-sm-6">
+                <img class="img-responsive" src="<?php the_field('whatisciswaimage'); ?>" alt="whatisciswaimage">
+<!--                <img src="http://localhost/wordpress/wp-content/themes/ciswa_theme/images/awards.jpg" alt="awards" />-->
+                </div>
             <!--main_articles-->
+            <div class="spacer">
+            </div>
 
 
 
@@ -56,4 +47,4 @@
 </div>
 <!--container_fluid-->
 
-<?php get_footer(); ?>
+<?php get_footer(); /* Tells WordPress to include footer.php */ ?>
