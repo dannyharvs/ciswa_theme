@@ -16,9 +16,42 @@ a {
     color: white;
 }
 
+<<<<<<< HEAD
+.h4 {
+    
+    width: 800px;
+}
+
+.panel-heading {
+   background-color: cornflowerblue!important;
+}
+.nominateawards{
+    padding: 50px;
+}
+.panel-heading h2 {
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: white;
+    
+}
+
+.nominateawards {
+    padding: 20px;
+}
+
+.panel-body{
+    height:300px;
+}
+
+.navbarsmallheader{
+     background-image: url(images/smallheader.jpg);
+        background-size: cover;
+=======
 .navbarsmallheader {
     background-image: url(images/smallheader.jpg);
     background-size: cover;
+>>>>>>> 7373a4772360aba08591f2f56ad2214183796a88
     background-position: center;
     background-repeat: no-repeat;
     /*    background-color: deepskyblue;*/
