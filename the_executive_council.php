@@ -16,24 +16,24 @@
                 </h2>
                 <p><?php the_field('intro'); ?></p>
 
-                <h2><?php the_field('presidentheading'); ?>
-                </h2>
+                <h5><?php the_field('presidentheading'); ?>
+                </h5>
                 <p><?php the_field('presidentp'); ?></p>
 
-                <h1><?php the_field('viceheading'); ?>
-                </h1>
+                <h5><?php the_field('viceheading'); ?>
+                </h5>
                 <p><?php the_field('viceheadingp'); ?></p>
 
-                 <h1><?php the_field('2ndviceheading'); ?>
-                </h1>
+                 <h5><?php the_field('2ndviceheading'); ?>
+                </h5>
                 <p><?php the_field('2ndvicep'); ?></p>
                 
-                <h1><?php the_field('treasureheading'); ?>
-                </h1>
+                <h5><?php the_field('treasureheading'); ?>
+                </h5>
                 <p><?php the_field('treasurep'); ?></p>
                 
-                <h1><?php the_field('projectheading'); ?>
-                </h1>
+                <h5><?php the_field('projectheading'); ?>
+                </h5>
                 <p><?php the_field('projectp'); ?></p>
                 
             </div>
