@@ -1,11 +1,18 @@
 <footer class="container-fluid footer">
 
     <div class="container">
+        
         <div class="row">
+             
             <div class="col-sm-1">
-                <h4>About Us</h4>
+                
+                <h4><?php the_field('about_us'); ?>
+                    About Us
+                </h4>
                 <ul class="demo">
-                    <li><a href="#">What is CISWA</a></li>
+                    <li>
+                        <a href="#"> What is CISWA</a>
+                    </li>
                     <li><a href="#">President's Welcome</a></li>
                     <li><a href="#">The Executive Council</a></li>
                 </ul>
@@ -40,7 +47,6 @@
 
 
         </div>
-        <!-- row -->
     </div>
     <!-- container -->
 </footer>
