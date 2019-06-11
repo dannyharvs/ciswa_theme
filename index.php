@@ -1,7 +1,9 @@
 <?php get_header(); /* Tells WordPress to include header.php */ ?>
 
+<!--
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('main_tag') ) : 
 endif; ?>
+-->
 
 <div class="container-fluid maincontainer">
     <div class="container-fluid text-center">
