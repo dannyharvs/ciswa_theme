@@ -129,7 +129,8 @@ wp_nav_menu( array(
 endif; ?>
 
                 <!--          <h1> Professional development for people who support international students, for over 50 years</h1>-->
-                <button type="button" href="#" class="btn btn-default">Discover More</button>
+                <a class="btn btn-default" href=<?php the_field('discovermore'); ?>>Discover More</a>
+<!--                <button type="button" href="#" class="btn btn-default">Discover More</button>-->
             </div>
         </header>
 
