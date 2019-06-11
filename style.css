@@ -150,6 +150,14 @@ h2 {
     padding-bottom: 20px;
 }
 
+h5 {
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+padding: 10px;
+}
+
 .col-sm-4 {
     padding: 20px;
     padding-bottom:
