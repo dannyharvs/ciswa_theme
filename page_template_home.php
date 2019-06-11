@@ -22,29 +22,31 @@
                 <p><?php the_field('providing_education'); ?>
                     <!--                Providing education and support at our annual winter conference.-->
                 </p>
-                <a class="btn btn-default" href=<?php the_field('registernow'); ?> >Register Now</a>
-                
+                <a class="btn btn-default" href=<?php the_field('registernow'); ?>>Register Now</a>
 
-<!--                    Register Now-->
-\
+
+                <!--                    Register Now-->
+                
             </div>
             <div class="col-sm-4">
                 <!--                <img class="img-responsive" src="http://localhost/wordpress/wp-content/themes/ciswa_theme/images/awards.jpg" alt="CISWA awards" />-->
                 <img class="img-responsive" src="<?php the_field('awards_image'); ?>" alt="awards_image">
                 <h3><?php the_field('ciswa_awards');?></h3>
                 <p><?php the_field('for_promoting'); ?>
-<!--                    For promoting and supporting international education in WA.-->
+                    <!--                    For promoting and supporting international education in WA.-->
                 </p>
-                <button type="button" class="btn btn-default">View Awards</button>
+                <a class="btn btn-default" href=<?php the_field('viewawards'); ?>>View Awards</a>
+<!--                <button type="button" class="btn btn-default">View Awards</button>-->
             </div>
             <div class="col-sm-4">
                 <img class="img-responsive" src="<?php the_field('community_image'); ?>" alt="community_image">
                 <!--                <img class="img-responsive" src="http://localhost/wordpress/wp-content/themes/ciswa_theme/images/communityengagement.jpg" alt="community engagement" />-->
                 <h3><?php the_field('community_interactions'); ?></h3>
                 <p><?php the_field('creating_opportunities'); ?>
-<!--                    Creating opportunities for international students.-->
+                    <!--                    Creating opportunities for international students.-->
                 </p>
-                <button type="button" class="btn btn-default">Learn More</button>
+                <a class="btn btn-default" href=<?php the_field('learnmore'); ?>>Learn More</a>
+<!--                <button type="button" class="btn btn-default">Learn More</button>-->
             </div>
         </div>
     </div>
@@ -53,9 +55,9 @@
 
 <div class="container-fluid members text-center">
     <div class="members">
-        <h3><?php the_field('members'); ?>
+        <h2><?php the_field('members'); ?>
             <!--Members-->
-        </h3>
+        </h2>
 
         <?php echo do_shortcode('[logoshowcase]'); ?>
 
