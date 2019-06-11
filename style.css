@@ -7,8 +7,6 @@ Author URI: http://ciswa.com
 Version: 1
 */
 
-
-
 a {
 
     color: black;
@@ -18,12 +16,22 @@ a {
     color: white;
 }
 
+.navbarsmallheader{
+     background-image: url(images/smallheader.jpg);
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+/*    background-color: deepskyblue;*/
+    padding-bottom: 35px;
+}
+
 .dropdown-menu {
+    padding-top: 5px;
     font-family: 'Lato', sans-serif;
-    padding-top: 20px;
     color: black;
     background-color: white;
     text-align: center;
+    
 
 }
 
@@ -33,9 +41,11 @@ a {
 
 }
 
+/*
 .img-responsive {
     width: 100%;
 }
+*/
 
 .members {
     font-family: 'Lato', sans-serif;
@@ -53,7 +63,11 @@ a {
 
 }
 
+.spacer {
+    padding:400px;
+}
 .col-sm-1 {
+      font-family: 'Lato', sans-serif;
     width: 20%;
     text-align: center;
 }
@@ -70,7 +84,6 @@ ul {
     color: white;
 }
 
-
 .navbar {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
@@ -78,6 +91,7 @@ ul {
 
 .nav > li > a:hover {
     background-color: white;
+     
 
 }
 
@@ -88,7 +102,9 @@ ul {
 }
 
 .banner {
-    background-image: url(http://localhost/wordpress/wp-content/themes/ciswa_theme/images/bannerimage.jpg");
+
+
+    background-image: url(images/bannerimage.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,6 +120,7 @@ ul {
     font-style: italic;
     color: white;
 }
+
 
 h2 {
     font-family: 'Lato', sans-serif;
@@ -128,6 +145,22 @@ h3 {
 .col-sm-4 p {
     font-family: 'Lato', sans-serif;
 
+
+}
+
+
+.col-sm-6 p {
+    padding-top: 50px;
+    padding-right: 50px;
+      font-family: 'Lato', sans-serif;
+}
+
+.col-sm-6 img {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -176,7 +209,7 @@ The submenu needs to be hidden  and control the font-size).*/
     float: left;
     width: 180px;
     z-index: 99999;
-    background-color: #CCC;
+    background-color: white;
     /*give the drop down a background or we won't see it against the busy background*/
 }
 
@@ -222,3 +255,9 @@ The submenu needs to be hidden  and control the font-size).*/
 }
 
 /*menu styling */
+
+
+#wpls-logo-showcase-slider-1 .wp-post-image,
+#wpls-logo-showcase-slider-1 .wp-post-image img.wp-post-image {
+    max-height: 100px !important;
+}
