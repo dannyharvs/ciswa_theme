@@ -38,7 +38,9 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid smallheader">
+        
+       
         <!-- <nav class="navbar">
         
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -94,9 +96,10 @@
       </div>
     </nav>  -->
 
-        <nav class="navbar ">
-
+        <nav class="navbarsmallheader">
+ 
             <div class="container-fluid">
+    
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
@@ -121,12 +124,7 @@ wp_nav_menu( array(
 ?>
                 </div>
             </div>
+        
         </nav>
 
-        <header class="container-fluid">
-            <div class="container">
-
-            </div>
-        </header>
-
-    </div>
+ </div>
