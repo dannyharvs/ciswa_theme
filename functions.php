@@ -20,17 +20,40 @@ function register_my_menu() {
 ?>
 
 <?php
-if (function_exists('register_sidebar')) register_sidebar();
-//making a widgetised area
- if (function_exists('register_sidebar')) {
-	register_sidebar(array(
-		'name' => 'Widgetized Sidebar Area',
-		'id'   => 'widgetized-area',
-		'description'   => 'This is a widgetized area.',
-		'before_widget' => '<aside class="aside_elements">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2>',
-		'after_title'   => '</h2>'
-	));
+function tagline() {
+
+	register_sidebar( array(
+		'name'          => 'main tagline',
+		'id'            => 'main_tag',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
 }
+add_action( 'widgets_init', 'tagline' );
+?>
+
+<?php
+function frontpage_uppertag() {
+
+	register_sidebar( array(
+		'name'          => 'uppertag frontpage',
+		'id'            => 'tag_upper',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'tagline' );
+?>
+
+<?php // This theme uses wp_nav_menu() in two locations.  
+register_nav_menus( array(  
+  'primary' => __( 'Primary Navigation', 'ciswa wordpress site' ),  
+  'secondary' => __('Secondary Navigation', 'ciswa wordpress site')  
+) );
 ?>
